@@ -4,15 +4,15 @@ import './Counter.css';
 
 const Counter = ({number, color, onIncrement, onDecrement, onSetColor}) => {
     return (
-        <div
-            className="Counter"
-            onClick={onIncrement}
+        <div 
+            className="Counter" 
+            onClick={onIncrement} 
             onContextMenu={
-                (e) => {
-                    e.preventDefault();
+                (e) => { 
+                    e.preventDefault(); 
                     onDecrement();
                 }
-            }
+            } 
             onDoubleClick={onSetColor}
             style={{backgroundColor: color}}>
                 {number}
@@ -26,7 +26,7 @@ Counter.propTypes = {
     onIncrement: PropTypes.func,
     onDecrement: PropTypes.func,
     onSetColor: PropTypes.func
-}
+};
 
 Counter.defaultProps = {
     number: 0,
