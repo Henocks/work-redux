@@ -21,6 +21,7 @@ const Counter = ({number, color, onIncrement, onDecrement, onSetColor}) => {
 };
 
 Counter.propTypes = {
+    index: PropTypes.number,
     number: PropTypes.number,
     color: PropTypes.string,
     onIncrement: PropTypes.func,
