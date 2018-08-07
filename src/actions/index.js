@@ -9,11 +9,11 @@ export const remove = (color) => ({
     type: types.REMOVE
 });
 
-export const increment = () => ({
+export const increment = (index) => ({
     type: types.INCREMENT
 });
 
-export const decrement = () => ({
+export const decrement = (index) => ({
     type: types.DECREMENT
 });
 

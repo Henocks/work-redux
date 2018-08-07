@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import Buttons from '../components/Buttons';
-import CounterContainer from '../containers/CounterContainer';
+import CounterListContainer from './CounterListContainer';
+import { getRandomColor } from '../utils';
 
-import { connect } from 'react-redux';
 import * as actions from '../actions';
 
-import { getRandomColor } from '../utils';
+
 
 class App extends Component {
     render() {
